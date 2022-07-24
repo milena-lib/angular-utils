@@ -1,0 +1,43 @@
+<div>
+    <!-- <h1>דף הבית</h1> -->
+    <app-tabs>
+        <app-tab [tabTitle]="'Modals'">
+            <app-button [caption]="translations.custModalCaption1" [color]="'btn-primary'" (click)="openDragModal('custom-modal-1')"></app-button>
+            <app-button [caption]="translations.custModalCaption2" [color]="'btn-primary'"(click)="openModal('custom-modal-2')"></app-button>
+
+            <app-modal-draggable id="custom-modal-1">
+                <div class="ico-close">
+                    <i class="material-icons" (click)="closeDragModal('custom-modal-1')">close</i>
+                  </div>
+                <h1>חלון מודאלי נגרר</h1>
+                <p>דף הבית מלל: </p>
+                <app-button [caption]="translations.closeCaption" [color]="'btn-primary'" (click)="closeDragModal('custom-modal-1')"></app-button>
+            </app-modal-draggable>
+            
+            <app-modal id="custom-modal-2">
+                <div class="ico-close">
+                    <i class="material-icons" (click)="closeModal('custom-modal-2')">close</i>
+                  </div>
+                <h1>חלון מודאלי יציב גבוה</h1>
+                <div class="big-window">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque dolorum possimus aut! Deleniti suscipit minima aliquid, porro, quibusdam a quaerat mollitia dolores commodi molestiae omnis quo? Est vel sequi aliquid.
+                    </p>
+                </div>
+                <app-button [caption]="translations.closeCaption" [color]="'btn-primary'" (click)="closeModal('custom-modal-2')"></app-button>
+            </app-modal>
+            
+        </app-tab>
+        <app-tab tabTitle="Input">
+            <app-input></app-input>
+        </app-tab>
+        <app-tab tabTitle="Select">
+            <app-select></app-select>
+        </app-tab>
+        <app-tab tabTitle="Textarea">
+            <app-textarea></app-textarea>
+        </app-tab>
+    </app-tabs>
+    <!--<div class="input-controls"></div>-->
+</div>
+

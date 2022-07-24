@@ -1,0 +1,15 @@
+<div class="floating-label">
+	<select #selectCtrl class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
+        <option *ngFor="let option of selectOptions; let i=index" [selected]="i===selectedIndex" [value]="option.value">{{option.text}}</option>    
+    </select>
+	<span class="highlight"></span>
+	<label>Label</label>
+</div>
+
+<div class="floating-inner-label">
+	<select #selectCtrl class="floating-select inner" onclick="this.setAttribute('value', this.value);" value="">
+        <option *ngFor="let option of selectOptions; let i=index" [selected]="i===selectedIndex" [value]="option.value">{{option.text}}</option>    
+    </select>
+	<span class="highlight"></span>
+	<label>Label</label>
+</div>

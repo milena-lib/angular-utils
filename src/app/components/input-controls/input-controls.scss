@@ -1,0 +1,156 @@
+/************floating-Lable style*************/
+.floating-label,
+.floating-inner-label { 
+    position: relative; 
+    margin: 1.25rem 0; 
+}
+.floating-input, .floating-select {
+    font-size: 14px;
+    padding: 4px 4px;
+    display: block;
+    width: 100% !important;
+    height: 30px;
+    background-color: transparent;
+    border-top: 1px solid var(--second-color);
+    border-right: 1px solid var(--second-color);
+    border-bottom:3px solid var(--primary-color);
+    border-left: 1px solid var(--second-color);
+    min-width: 100px !important;
+}
+
+
+.floating-input:focus, .floating-select:focus {
+    outline: none;
+    border-bottom: 2px solid var(--primary-color); 
+}
+  
+.floating-label label {
+    color: #999; 
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    top: 5px;
+    transition: 0.2s ease all; 
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+    white-space: nowrap;
+}
+
+.floating-input:focus ~ label, 
+.floating-input:not(:placeholder-shown) ~ label {
+    top: -18px;
+    font-size: 14px;
+}
+  
+.floating-select:focus ~ label, 
+.floating-select:not([value=""]):valid ~ label,
+.floating-select.selected:valid ~ label,/*milena test*/
+.floating-select.selected:disabled ~ label { /*milena test*/
+    top: -18px;
+    font-size: 14px;
+    /*color:var(--primary-color);*/  
+}
+
+.floating-select.selected:valid ~ label { /*milena test*/
+    font-weight: normal !important;
+}
+  
+.floating-input:not(:placeholder-shown) ~ label,
+.floating-select:not([value=""]):valid ~ label {
+    color: var(--dark-color) !important;
+    font-weight: normal !important;
+}
+
+.floating-input:focus ~ label,
+.floating-select:focus ~ label {
+    color: var(--primary-color);
+    font-weight: normal !important;
+}
+
+/* active state */
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+    width:50%;
+}
+  
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* highlighter */
+.highlight {
+    position: absolute;
+    height: 50%; 
+    width: 100%; 
+    top: 15%; 
+    right: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+.floating-input:focus ~ .highlight , .floating-select:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* animation */
+@-webkit-keyframes inputHighlighter {
+    from { background: var(--primary-color); }
+    to { width:0; background: transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background: var(--primary-color); }
+    to { width:0; background: transparent; }
+}
+@keyframes inputHighlighter {
+    from { background: var(--primary-color); }
+    to { width:0; background: transparent; }
+}
+
+/****  floating-Lable style end ****/
+
+
+/****  floating-inner-Lable style end ****/
+
+.floating-inner-label label {
+    color: #999; 
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    bottom: 2px;
+    transition: 0.2s ease all; 
+    -moz-transition: 0.2s ease all; 
+    -webkit-transition: 0.2s ease all;
+    white-space: nowrap;
+}
+
+.floating-input.inner:focus ~ label, 
+.floating-input.inner:not(:placeholder-shown) ~ label {
+    top: 0;
+    font-size: 14px;
+}
+
+.floating-input.inner,
+.floating-select.inner {
+    height: 42px;
+    padding: 16px 4px 0;
+}
+
+.floating-select.inner:focus ~ label, 
+.floating-select.inner:not([value=""]):valid ~ label,
+.floating-select.inner.selected:valid ~ label,/*milena test*/
+.floating-select.inner.selected:disabled ~ label { /*milena test*/
+    top: 0;
+    font-size: 14px;
+    /*color:var(--primary-color);*/  
+}
+  
+
+/****  floating-inner-Lable style end ****/

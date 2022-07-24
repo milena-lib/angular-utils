@@ -1,0 +1,72 @@
+app-modal-draggable {
+    /* modals are hidden by default */
+    display: none;
+
+    .drag-modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // width: calc(#{$max-width} + .7rem);
+        margin: auto;
+
+        /* z-index must be higher than .drag-modal-background */
+        z-index: 1000;
+        
+        /* enables scrolling for big modals */
+        overflow: auto;
+        // border: 1px solid red;
+        
+        .drag-modal-body {
+            padding: 2rem;
+            background: #fff;
+            border: 2px solid var(--dark-color);
+            width: calc(100vw - 20%);
+            box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);            
+            margin: 4rem auto;
+
+            /* draggable modal */
+            position: relative;
+            cursor: move;
+        }
+    }
+
+    .ico-close {
+        text-align: left;
+
+        .material-icons {
+            font-size: 2rem;
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(0,0,0,0.5);
+            }
+        }
+    }
+
+    .drag-modal-background {
+        /* modal background fixed across whole screen */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        /* semi-transparent black  */
+        background-color: rgba(0,0,0,0.5);
+        opacity: 0.75;
+        
+        /* z-index must be below .drag-modal and above everything else  */
+        z-index: 900;
+    }
+
+    .big-window {
+        height: calc(100vh - 25rem);
+    }
+}
+
+body.drag-modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+}
