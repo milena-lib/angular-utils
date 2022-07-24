@@ -37,6 +37,34 @@
         <app-tab tabTitle="Textarea">
             <app-textarea></app-textarea>
         </app-tab>
+        <app-tab tabTitle="Tooltips">            
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                    </tr>                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><app-tooltips [text]="'Jonn'" [tooltipText]="'Jonn'"></app-tooltips></td>
+                        <td><app-tooltips [text]="'Smith'" [tooltipText]="'Smith'"></app-tooltips></td>
+                        <td><app-tooltips [text]="'32'" [tooltipText]="'32'"></app-tooltips></td>
+                    </tr>
+                    <tr>
+                        <td><app-tooltips [text]="'Henry'" [tooltipText]="'Henry'"></app-tooltips></td>
+                        <td><app-tooltips [text]="'Ford'" [tooltipText]="'Ford'"></app-tooltips></td>
+                        <td><app-tooltips [text]="'60'" [tooltipText]="'60'"></app-tooltips></td>
+                    </tr>
+                    <tr>
+                        <td><app-tooltips [text]="'Sofi'" [tooltipText]="'Sofi'"></app-tooltips></td>
+                        <td><app-tooltips [text]="'Loren'" [tooltipText]="'Loren'"></app-tooltips></td>
+                        <td><app-tooltips [text]="'55'" [tooltipText]="'55'"></app-tooltips></td>
+                    </tr>
+                </tbody>
+            </table>
+        </app-tab>
     </app-tabs>
     <!--<div class="input-controls"></div>-->
 </div>

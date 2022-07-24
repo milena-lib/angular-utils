@@ -15,6 +15,7 @@ import { ClickEscapeDirective } from './directives/click-escape.directive';
 import { TextareaComponent } from './components/input-controls/textarea/textarea.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { TabComponent } from './components/tabs/tab/tab.component';
+import { TooltipsComponent } from './components/tooltips/tooltips.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TabComponent } from './components/tabs/tab/tab.component';
     ClickEscapeDirective,
     TextareaComponent,
     TabsComponent,
-    TabComponent
+    TabComponent,
+    TooltipsComponent
   ],
   imports: [
     BrowserModule,
