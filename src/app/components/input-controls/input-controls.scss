@@ -142,7 +142,8 @@
     left: 0;
 }
 
-.floating-inner-label input[type=text]:focus ~ .line {
+.floating-input.inner:focus ~ .line,
+.floating-input.inner:not(:placeholder-shown) ~ .line {
     width: 100%;
     background-color: var(--primary-color); 
     transition: .3s width ease-in-out;
