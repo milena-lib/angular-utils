@@ -124,7 +124,7 @@
     position: absolute;
     pointer-events: none;
     right: 5px;
-    bottom: 2px;
+    top: 18px; //fixes
     transition: 0.2s ease all; 
     -moz-transition: 0.2s ease all; 
     -webkit-transition: 0.2s ease all;
@@ -153,6 +153,9 @@
 .floating-input.inner:not(:placeholder-shown) ~ label {
     top: 0;
     font-size: 14px;
+    transition: 0.2s ease all; //fixes
+    -moz-transition: 0.2s ease all; //fixes
+    -webkit-transition: 0.2s ease all;//fixes
 }
 
 .floating-input.inner:focus {
@@ -177,5 +180,9 @@
     /*color:var(--primary-color);*/  
 }
   
-
+.floating-input.inner:focus ~ .highlight , .floating-select.inner:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease; //fixes
+    -moz-animation: inputHighlighter 0.3s ease;//fixes
+    animation: inputHighlighter 0.3s ease;//fixes
+}
 /****  floating-inner-Lable style end ****/
