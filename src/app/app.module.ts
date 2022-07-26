@@ -16,6 +16,7 @@ import { TextareaComponent } from './components/input-controls/textarea/textarea
 import { TabsComponent } from './components/tabs/tabs.component';
 import { TabComponent } from './components/tabs/tab/tab.component';
 import { TooltipsComponent } from './components/tooltips/tooltips.component';
+import { TooltipPositionDirective } from './directives/tooltip-position.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TooltipsComponent } from './components/tooltips/tooltips.component';
     TextareaComponent,
     TabsComponent,
     TabComponent,
-    TooltipsComponent
+    TooltipsComponent,
+    TooltipPositionDirective
   ],
   imports: [
     BrowserModule,
