@@ -8,8 +8,7 @@
     font-weight: bold;
     
     &:disabled {
-        background: #333333;
-        color: #fff;
+        opacity: 0.5;
         cursor: not-allowed;
     }
 
@@ -23,24 +22,12 @@
     color: #000;
     border: 2px solid #000;
     box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-    
-    &:disabled {
-        background: #333333;
-        color: #fff;
-        cursor: not-allowed;
-    }
 }
 .storybook-button--secondary {
     color: #2cd5c4;
     background-color: #000;
     border: 2px solid #2cd5c4;
     box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-    
-    &:disabled {
-        background: #333333;
-        color: #fff;
-        cursor: not-allowed;
-    }
 }
 
 .storybook-button--small {
