@@ -1,1 +1,4 @@
-<button class="btn-primary">{{caption}}</button>
+<button class="btn-primary"
+    [ngClass]="classes"
+    [ngStyle]="{ 'background-color': backgroundColor }"
+>{{ label }}</button>
