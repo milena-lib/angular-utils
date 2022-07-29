@@ -874,7 +874,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "\r\n.storybook-button {\r\n    display: inline-block;\r\n    padding: .4rem 1.3rem;    \r\n    cursor: pointer;\r\n    margin: 1rem;\r\n    transition: opacity .2s;\r\n    outline: none;\r\n    font-weight: bold;\r\n    \r\n    &:disabled {\r\n        background: var(--dark-color);\r\n        color: var(--white-color);\r\n        cursor: not-allowed;\r\n    }\r\n\r\n    &:hover:not(:disabled) {\r\n        opacity: 0.5;\r\n    }\r\n}\r\n\r\n.storybook-button--primary {\r\n    background: var(--primary-color);\r\n    color: var(--black-color);\r\n    border: 2px solid var(--black-color);\r\n    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);\r\n    \r\n    &:disabled {\r\n        background: var(--dark-color);\r\n        color: var(--white-color);\r\n        cursor: not-allowed;\r\n    }\r\n}\r\n.storybook-button--secondary {\r\n    color: #333;\r\n    background-color: transparent;\r\n    border: 2px solid var(--black-color);\r\n    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);\r\n    \r\n    &:disabled {\r\n        background: var(--dark-color);\r\n        color: var(--white-color);\r\n        cursor: not-allowed;\r\n    }\r\n}\r\n\r\n.storybook-button--small {\r\n    font-size: 12px;\r\n    padding: 10px 16px;\r\n}\r\n.storybook-button--medium {\r\n    font-size: 14px;\r\n    padding: 11px 20px;\r\n}\r\n.storybook-button--large {\r\n    font-size: 16px;\r\n    padding: 12px 24px;\r\n}\r\n\r\n",
+                    "data": ".storybook-button {\r\n    display: inline-block;\r\n    padding: .4rem 1.3rem;    \r\n    cursor: pointer;\r\n    margin: 1rem;\r\n    transition: opacity .2s;\r\n    outline: none;\r\n    font-weight: bold;\r\n    \r\n    &:disabled {\r\n        opacity: 0.5;\r\n        cursor: not-allowed;\r\n    }\r\n\r\n    &:hover:not(:disabled) {\r\n        opacity: 0.5;\r\n    }\r\n}\r\n\r\n.storybook-button--primary {\r\n    background: #2cd5c4;\r\n    color: #000;\r\n    border: 2px solid #000;\r\n    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);\r\n}\r\n.storybook-button--secondary {\r\n    color: #2cd5c4;\r\n    background-color: #000;\r\n    border: 2px solid #2cd5c4;\r\n    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);\r\n}\r\n\r\n.storybook-button--small {\r\n    font-size: 12px;\r\n    padding: 10px 16px;\r\n}\r\n.storybook-button--medium {\r\n    font-size: 14px;\r\n    padding: 11px 20px;\r\n}\r\n.storybook-button--large {\r\n    font-size: 16px;\r\n    padding: 12px 24px;\r\n}\r\n\r\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -906,7 +906,7 @@
             "isDuplicate": true,
             "duplicateId": 1,
             "duplicateName": "ButtonComponent-1",
-            "templateData": "<button class=\"btn-primary\"\r\n    [ngClass]=\"classes\"\r\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\r\n>{{ label }}</button>"
+            "templateData": "<button \r\n    [ngClass]=\"classes\"\r\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\r\n>{{ label }}</button>"
         },
         {
             "name": "HeaderComponent",

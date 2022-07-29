@@ -10,7 +10,40 @@ export default {
   component: ButtonComponent,
   // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    // Assigns the argTypes to the Colors category
+    backgroundColor: {
+      control: 'color',
+      table: {
+        category: 'Colors',
+        // Assigns the argTypes to a specific subcategory
+        subcategory: 'Button colors',
+      },
+    },
+    primary: {
+      table: {
+        category: 'Colors',
+        subcategory: 'Button style',
+      },
+    },
+    label: {
+      table: {
+        category: 'Text',
+        subcategory: 'Button contents',
+      },
+    },
+    // Assigns the argType to the Events category
+    onClick: {
+      table: {
+        category: 'Events',
+        subcategory: 'Button Events',
+      },
+    },
+    // Assigns the argType to the Sizes category
+    size: {
+      table: {
+        category: 'Sizes',
+      },
+    },
   },
 } as Meta;
 
@@ -23,7 +56,7 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/angular/writing-stories/args
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: 'Click Me'
 };
 
 export const Secondary = Template.bind({});

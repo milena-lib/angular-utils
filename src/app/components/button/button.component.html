@@ -1,4 +1,4 @@
-<button 
+<button (click)="onClick.emit($event)"
     [ngClass]="classes"
     [ngStyle]="{ 'background-color': backgroundColor }"
 >{{ label }}</button>
