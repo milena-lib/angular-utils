@@ -17,6 +17,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { TabComponent } from './components/tabs/tab/tab.component';
 import { TooltipsComponent } from './components/tooltips/tooltips.component';
 import { TooltipPositionDirective } from './directives/tooltip-position.directive';
+import { TooltipDirective } from './directives/tooltip.directive';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TooltipPositionDirective } from './directives/tooltip-position.directiv
     TabsComponent,
     TabComponent,
     TooltipsComponent,
-    TooltipPositionDirective
+    TooltipPositionDirective,
+    TooltipDirective
   ],
   imports: [
     BrowserModule,
