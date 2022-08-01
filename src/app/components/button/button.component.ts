@@ -18,7 +18,7 @@ export class ButtonComponent implements OnInit {
      * Checks if the button should be disabled
      */
     @Input()
-    isDisabled: boolean;
+    disabled = false;
 
    /**
     * What background color to use
@@ -52,9 +52,15 @@ export class ButtonComponent implements OnInit {
       return ['storybook-button', `storybook-button--${this.size}`, mode];
     }
 
+    public get isDisabled(): boolean {
+      console.log("isDisabled: ", this.disabled);
+      return this.disabled;
+    }
+
     constructor() { }
 
     ngOnInit(): void {
     }
+
 
 }
