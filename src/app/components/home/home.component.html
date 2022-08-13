@@ -38,7 +38,7 @@
             <app-textarea></app-textarea>
         </app-tab>
         <app-tab tabTitle="Tooltips">            
-            <table>
+        <!--<table>
                 <thead>
                     <tr>
                         <th>First Name</th>
@@ -48,22 +48,29 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><app-tooltips [text]="'Jonn'" [tooltipText]="'Jonn'"></app-tooltips></td>
-                        <td><app-tooltips [text]="'Smith'" [tooltipText]="'Smith'"></app-tooltips></td>
-                        <td><app-tooltips [text]="'32'" [tooltipText]="'32'"></app-tooltips></td>
+                        <td [tooltip]="'Jonn'">Jonn</td>
+                        <td [tooltip]="'Smith'">Smith</td>
+                        <td [tooltip]="'32'">32</td>
                     </tr>
                     <tr>
-                        <td><app-tooltips [text]="'Henry'" [tooltipText]="'Henry'"></app-tooltips></td>
-                        <td><app-tooltips [text]="'Ford'" [tooltipText]="'Ford'"></app-tooltips></td>
-                        <td><app-tooltips [text]="'60'" [tooltipText]="'60'"></app-tooltips></td>
+                        <td [tooltip]="'Henry'">Henry</td>
+                        <td [tooltip]="'Ford'">Ford</td>
+                        <td [tooltip]="'60'">60</td>
                     </tr>
                     <tr>
-                        <td><app-tooltips [text]="'Sofi'" [tooltipText]="'Sofi'"></app-tooltips></td>
-                        <td><app-tooltips [text]="'Loren'" [tooltipText]="'Loren'"></app-tooltips></td>
-                        <td><app-tooltips [text]="'55'" [tooltipText]="'55'"></app-tooltips></td>
+                        <td [tooltip]="'Sofi'">Sofi</td>
+                        <td [tooltip]="'Loren'">Loren</td>
+                        <td [tooltip]="'55'">55</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
+
+            <div class="tooltip-example">
+                <div tooltip="tootip on left" placement="left" delay="500">tootip on left</div>
+                <div tooltip="tootip on top" placement="top" delay="500">tootip on top</div>
+                <div tooltip="tootip on bottom" placement="bottom" delay="500">tootip on bottom</div>
+                <div tooltip="tootip on right" placement="right" delay="500">tootip on right</div>
+              </div>
         </app-tab>
     </app-tabs>
     <!--<div class="input-controls"></div>-->
